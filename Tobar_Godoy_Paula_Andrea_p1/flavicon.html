@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta name="viewport" content="widht-device-widht, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="mailto:user@user.com" method="post" name="registro">
+         <fieldset>    <input type="text" name="Nombre" placeholder="Escribe tu nombre" value="Sin nombre">
+            <!--size: tamanño del rectangulo
+            maxlenght: número máximo de caracteres-->
+            <br>
+            <input type="password">
+            <br>
+            <!--nombre del grupo checkbox
+            value: nombre de la casilla en concreto-->
+            <input type="checkbox" name="condiciones" value="imagen"> Acepto ser grabada
+            <br>
+            <input type="checkbox" name="condiciones" value="revista" checked> Acepto la suscripción 
+            <br>
+            <!--checked da valor inicial "marcado"
+            selección excluyente: radio-->
+            <p>Dime tu animal favorito:</p>
+            <input type="radio" name="animales" value="perro"><label for="perro">Perro</label> 
+            <input type="radio" name="animales" value="gato"> Gato
+            <input type="radio" name="animales" value="unicornio"> Unicornio
+            <input type="radio" name="comida"> Pizza
+            <p>Dime tu comida favorita</p>
+            <br>
+            <!--el contenido del botón es el valor que toma el atributo value-->
+            <input type="submit" value="Enviar">
+            <!--el contenido del botón va entre la la etiqueta de apertura y cierre
+            de esta forma, puedo introducir otras etiquetas como hijos de button-->
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+            <a href="flavicon.html">borrar</a>
+            <!--Selector múltiple-->
+            <p>Elige tu deporte favorito</p>
+            <select name="deportes" multiple size="">
+                <option value="ninguno">Ninguno</option>
+                <option value="fútbol">Fútbol</option>
+                <option value="baloncesto">Baloncesto</option>
+                <option value="tenis">Tenis</option>
+                <option value="waterpolo">Waterpolo</option>
+            </select>
+        </fieldset>
+        </form>
+    </body>
+</html>

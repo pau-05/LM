@@ -1,0 +1,8 @@
+@font-face {
+    font-family: medellin;
+    src: url("../fuentes/medellin.ttf");
+}
+h1{
+    font-family: medellin;
+    font-size:200px;
+}

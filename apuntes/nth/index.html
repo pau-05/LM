@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.container:nth-child(12){
+            background-color: brown;
+        }
+        /*n=0,1,2,...*/
+        /*Todos los párrafos*/
+      
+        /*del párrafo 5 en adelante, color rosa*/
+        p:nth-of-type(-n+5) {
+            color: pink;
+        }
+        .container{
+            background-color: red;
+        }
+        div{
+            background-color: black;
+        }
+        #x{
+            color:blueviolet;
+        }
+        /*aplico estilos a todos los class="container"
+        que pertenezcan a un div*/
+        div.container{
+            color:blue;
+        }
+        /*Otra opción de hacer lo mismo*/
+        div[class="container"]{
+            color:chartreuse;
+        }
+        p:nth-of-type(8)[class="container"]{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="container">dd</p>
+    <p>Párrafo 1</p>
+    <p>Párrafo 2</p>
+    <div class="container" id="x">rwet</div>
+    <div class="container">sfdg</div>
+    <div class="container">dfg</div>
+    <p>Párrafo 3</p>
+    <p>Párrafo 4</p>
+    <p>Párrafo 5</p>
+    <p>Párrafo 6</p>
+    <p class="container">dd</p>
+    <p>Párrafo 7</p>
+    <p class="container">dd</p>
+    <p>Párrafo 8</p>
+    <p class="container">dd</p>
+    <p class="container">dd</p>
+</body>
+</html>

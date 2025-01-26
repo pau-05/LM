@@ -1,0 +1,148 @@
+@font-face {
+    font-family: delfines;
+    src: url(../fuente/Shiny.ttf);
+}
+body{
+    background-color: #c4f4ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    /*Le pongo las principales características*/
+    position:sticky;
+    margin:0;
+    background-color: #2d5f6c;
+}
+.menu>ul{
+    /*Aquí ajusto los ul*/
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+/*Evita que las frases largas se pongan en 2 
+líneas*/
+.flex2{
+    white-space: nowrap;
+}
+/*Estos estilos afectan tanto a los li
+de menú como a los de submenú*/
+.menu ul li{
+    list-style: none;
+    margin: 0;
+}
+.menu ul li a{
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    display:block;
+    padding: 25px 100px;
+    font-size: x-large;
+    border: 2px transparent solid;
+}
+.menu ul li a:hover{
+    /*le pongo que solo se subraye si lo paso 
+    por encima*/
+    border: 2px white solid;
+}
+.submenu{
+    /*Para que lo que tiene dentro de oculte*/
+    display:none;
+    /*Se posiciona con respecto a su relativo
+    ancestro más cercano*/
+    position:absolute;
+    padding: 0;
+    margin-left: 5px;
+}
+.menu ul li:hover .submenu{
+    /*Se despliega cuando pongo el
+    ratón encima de cada li*/
+    display: block;
+    background-color: #2d5f6c;
+}
+.relativo{
+    /*Para que el absolute se posicione*/
+    position:relative;
+}
+.submenu a{
+    /*Obligo a que no haga salto de línea*/
+    white-space: nowrap;
+}
+h1{
+    /*Le añado todas las características del h1*/
+    text-align: center;
+    font-family: delfines;
+    font-size: 4rem;
+}
+.section1{
+    /*Aquí añado la imagen de fondo para el 
+    formulario*/
+    background-image: url(../img/ocean.jpg);
+    padding: 5%;
+    padding-left: 35%;
+}
+.cuadrado{
+    /*Este es el cuadrado negro de fondo del 
+    formulario*/
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.516);
+    height: 80vh;
+    width: 60vh;
+    text-align: center;
+}
+.section2{
+    /*Lo centro y lo espacio*/
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.section2 table{
+    /*Para que quede uno al lado del otro*/
+    display: flex;
+}
+.section3 img{
+    /*Para que las imagenes queden en el centro*/
+    justify-self: center;
+}
+.img1{
+    /*Ajusto la primera imagen*/
+    margin-top: 100px;
+    display: inline-flex;
+    height: 80vh;
+    width: 70vw;
+}
+.img2{
+    /*Ajusto las siguientes para que quede una
+    al lado de otra y más pequeñas que la de
+    arriba*/
+    display: flex;
+    height: 40vh;
+    width: 30vw;
+}
+footer{
+    /*Ajusto las fotos*/
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    width: 20vw;
+    height: 30vh;
+}
+footer .delfin img{
+    animation: delfin 5s linear;
+    width: 20vw;
+    height: 30vh;
+}
+@keyframes delfin {
+    0% {
+        transform: translateX(10vh);
+    }
+    50% {
+        transform: translateX(50vw);
+    }
+    100%{
+        transform: translateY(-10vh)
+    }
+    150%{
+        transform: translate(-50vw);
+    }
+}

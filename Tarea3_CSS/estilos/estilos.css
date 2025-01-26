@@ -1,0 +1,111 @@
+body{
+    background-image: url(../imagenes/fondo.png);
+    font-family:monospace;
+}
+.container1{
+    width: 63.5vw;
+    height: 70vh;
+    background-color: #313338;
+    margin-top: 7%;
+    margin-left: 18%;
+    position: relative;
+    background-image: url(../imagenes/discord_qr.png);
+    background-position: 89.5% 15%;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    border-radius: 1%;
+}
+h3{
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 20%;
+}
+.container1 p{
+    position: absolute;
+    color: #C0C2C5;
+    font-size: 1rem;
+    top: 10%;
+    padding-left: 11%;
+}
+.container2{
+    position: absolute;
+    top: 15%;
+    color: #C0C2C5;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.container3{
+    position: absolute;
+    top: 40%;
+    padding-left: 5%;
+    color: #C0C2C5;
+}
+input{
+    font-family: monospace;
+    background-color: black;
+    width: 420px;
+    height: 30px;
+    margin-top: 5px;
+    color: #C0C2C5;
+}
+.container4 a{
+    position: absolute;
+    top: 60%;
+    padding-left: 5%;
+    color: #0999D1;
+    text-decoration: none;
+}
+.container4 a:hover{
+    color: #097fae;
+    text-decoration: underline;
+}
+.container5 input{
+    position: absolute;
+    font-family: monospace;
+    background-color: #4752C4;
+    width: 430px;
+    height: 45px;
+    margin-top: 250px;
+    margin-left: 5%;
+    color: white;
+}
+.container5 a:hover{
+    color: #363e94;
+    text-decoration: underline;
+}
+.container6{
+    position: absolute;
+    top: 80%;
+    color: #72767D;
+    padding-left: 5%;
+}
+.container6 a{
+    position: absolute;
+    padding-left: 5%;
+    color: #0999D1;
+    text-decoration: none;
+}
+.container6 a:hover{
+    color: #097fae;
+    text-decoration: underline;
+}
+.container7{
+    position: absolute;
+    padding-left: 58%;
+    color: #C0C2C5;
+    top: 55%;
+}
+.container7 h2{
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.container7 a{
+    color: #0999D1;
+    text-decoration: none;
+}
+.container7 a:hover{
+    color: #097fae;
+    text-decoration: underline;
+}

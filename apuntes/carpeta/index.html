@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Posicionamiento CSS</title>
+        <link rel="stylesheet" href="css..css/estilos.css">
+    </head>
+
+    <body>
+        <!--<p>Mi primera página con JavaScript</p>
+        La etiqueta script siempre irá posicionada al final del html. En caso contrario, podría
+        haber errores
+        <script>
+            /*Todo el código JavaScript*/
+            /*open abre una nueva ventana con la dirección URL indicada*/
+            //open("http://www.google.com","","width=550,height=420,menubar=no")
+            /*Ventana de alerta (el mensaje siempre será lo que está entre comillas)*/
+            //alert("Esto es una ventana de alerta")
+            document.write("Hola Mundo")
+        </script>-->
+
+        <img id="img" src="img/aguar.png">
+        <button id="boton1" type="button">Aparece</button>
+        <button id="boton2" type="button">Desaparece</button>
+        <script>
+            /*Ventana para introducir datos*/
+            var datos = prompt("Dime hola")
+            alert(datos)
+            var x = 8
+            var y = 9
+            z = x+y
+            console.log(z)
+            alert(z)
+            /*Cuando dé click al elementos con el id "img"...*/
+            var b = true
+            document.getElementById("boton1").onclick = function(){
+                /*Cambio el width de la imagen*/
+                document.getElementById("img").style.display="block"
+                if(b){
+                    alert("b vale true")
+                    b = false
+                }else{
+                    alert("b vale false")
+                    b = true
+                }
+            }
+            document.getElementById("boton2").onclick = function(){
+                /*Cambio el width de la imagen*/
+                document.getElementById("img").style.display="none"
+            }
+            //Math.random() -> genera un número random entre 0 y 1
+            //Math.floor() -> redondea hacia abajo, es decir si el anterior genera 0,9 lo redondea a 0
+            //Math.round() -> redondea de forma "natural" es decir, 0,9 lo redondea a 1, este egenera problemas ya que en entre 0, 1 y 2 
+            //hay más probabilidades de que salga el 1
+            //Ejemplo clase 16/01/2025
+            
+        </script>
+    </body>
+</html>

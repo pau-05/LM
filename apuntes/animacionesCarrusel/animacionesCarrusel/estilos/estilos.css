@@ -1,0 +1,26 @@
+
+img{
+    width: 20vw;
+    height: 50vh;
+}
+.container{
+    display:flex;
+    /*Aplico la animación al container durante 6 segundos de
+    forma infinita*/
+    animation: carrusel 6s linear infinite;
+    width: fit-content;
+    gap:2vw;
+}
+/*se mueve hacia la izquierda un 50% del viewport y
+vuelve a su posición original*/
+@keyframes carrusel {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50vw);
+    }
+    100%{
+        transform: translateY(0vw)
+    }
+}

@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /*Alineación horizontal*/
+    align-items: center;
+    /*alineación vertical*/
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+.seccion1{
+    /*alineación horizontal*/
+    justify-content: space-around;
+    /*Alineación vertical*/
+    align-items: center;
+}
+h2 {
+    text-align: center;
+}
+
+.row {
+    justify-content: space-around;
+}
+
+.section {
+    margin: 20px 0;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    height: 500px;
+}
+
+.align-center {
+    align-items: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+.box-1 {
+    background-color: #ff6347;
+    flex:1
+}
+
+.box-2 {
+    background-color: #4682b4;
+    flex:2
+}
+
+.box-3 {
+    background-color: #32cd32;
+    flex:1
+}
+
+.box-4 {
+    background-color: #8a2be2;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+    align-items: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}

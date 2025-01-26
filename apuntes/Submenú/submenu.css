@@ -1,0 +1,65 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+.menu{
+   position:sticky;
+   top:0;
+   background-color: #181A35;
+}
+/*Estos estilos solo aplican a los
+hijos directos ul de menu. 
+Por lo tanto, no afecta al ul dentro de submenu*/
+.menu>ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding:0;
+}
+/*Evita que "Amazon Basics" 
+se ponga en dos líneas*/
+.flex2{
+    white-space: nowrap;
+}
+/*Estos estilos afectan tanto a los li
+de menú como a los de submenú*/
+.menu ul li{
+    list-style: none;
+    margin: 0;
+}
+.menu ul li a{
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    display:block;
+    padding: 25px 100px;
+    font-size: x-large;
+    border: 2px transparent solid;
+}
+.menu ul li a:hover{
+    border: 2px white solid;
+}
+.submenu{
+    /*Para que el elemento se oculte
+    por defecto*/
+    display:none;
+    /*Se posiciona con respecto a su relativo
+    ancestro más cercano*/
+    position:absolute;
+    padding: 0;
+    margin-left: 5px;
+}
+.menu ul li:hover .submenu{
+    /*El elemento aparece cuando pongo el
+    ratón encima de cada li*/
+    display: block;
+    background-color: #181A35;
+}
+.relativo{
+    /*Para que el absolute se posicione*/
+    position:relative;
+}
+.submenu a{
+    /*Obligo a no hacer salto de línea*/
+    white-space: nowrap;
+}

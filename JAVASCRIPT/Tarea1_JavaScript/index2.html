@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Punto 2</title>
+        <link rel="stylesheet" href="estilos/estilos.css">
+    </head>
+
+    <body>
+        <div class="rojo" id="rojo"></div>
+        <button id="boton1" type="button">Aumenta/Cambia de color</button>
+        <button id="boton2" type="button">Disminuye/Cambia de color</button>
+        <script>
+            /*Cambia el tamaño y color*/
+            /*Cambiar el bucle de tamaño*/
+            var duplicaTamaño = document.getElementById("rojo").style.width*2+"px"
+            document.getElementById("boton1").onclick = function(){
+                
+                var color = ["green", "red", "blue", "yellow", "orange"]
+                var indiceAleatorio = Math.floor(Math.random() * color.length)
+                var resultado = color[indiceAleatorio]
+                document.getElementById("rojo").style.backgroundColor="" + resultado + ""
+                document.getElementById("rojo").style.width=(width*2)+"px"
+                document.getElementById("rojo").style.height=(height*2)+"px"
+            }/*añadir vector de colores*/
+            /*Vuelve al tamaño original y cambia el color*/ 
+            document.getElementById("boton2").onclick = function(){        
+                var color = ["green", "red", "blue", "yellow", "orange"]
+                var indiceAleatorio = Math.floor(Math.random() * color.length)
+                var resultado = color[indiceAleatorio]
+                document.getElementById("rojo").style.backgroundColor="" + resultado + ""
+            }
+        </script>
+    </body>
+</html>

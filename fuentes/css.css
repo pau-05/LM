@@ -1,0 +1,51 @@
+@font-face{
+    font-family: medellin;
+    src: url("../fuentes/fuentes/fuentes/medellin.ttf")
+}
+body{
+    background-color: #fd82fc;
+}
+h1{
+    color: #f70efc;
+    margin-top: 0;
+    font-size: 100px;
+    text-align: center;
+    font-family: medellin;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.container img{
+    width: 25w;
+    height: 30vh;
+}
+p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: purple;
+    font-size: 30px;
+    
+}
+nav{
+    background-color: antiquewhite;
+}
+nav ul{
+    display: flex;
+    justify-content: space space-around;
+    list-style: none;
+}
+nav ul li{
+    border: 10px;
+}
+nav ul li a{
+    border: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    border-color: purple;
+    background-color: rgb(229, 232, 235);
+}

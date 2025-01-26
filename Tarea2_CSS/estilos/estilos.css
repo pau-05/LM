@@ -1,0 +1,77 @@
+.image{
+    background-image: url(../images/Tomate-Rojo-Daniela-0007778_450.png);
+    width: 500px; 
+    height: 500px;
+    background-repeat: no-repeat;
+    position: relative;  
+
+}
+.texto1{
+    position: absolute;
+    top: 0;
+}
+.texto2{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.texto3{
+    position: absolute;
+    bottom: 0;
+}
+.texto4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.grande{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin-top: 500px;
+}
+.rojo{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: red;
+}
+.rosa{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    right: 0;
+    background-color: palevioletred;
+}
+.verde{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: 0;
+    background-color: green;
+}
+.amarillo{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.lista menu{
+    margin-top: 100px;
+    position: sticky;
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-around;
+    padding: 15px;
+    list-style: none;
+    margin-left: 0;
+}

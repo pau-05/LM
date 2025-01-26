@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Punto 1</title>
+        <link rel="stylesheet" href="estilos/estilos.css">
+    </head>
+
+    <body>
+        <img id="img" src="img/koalas.jpg">
+        <button id="boton1" type="button">Aparece/Desaparece</button>
+        <button id="boton2" type="button">Cambiar foto</button>
+        <script>
+            /*Creo unos booleanos con los que controlaré los botones*/
+            var a = true 
+            var b = true
+            /*Bucle para cambiar el widht de la imagen*/
+            document.getElementById("boton1").onclick = function(){
+                if(a){
+                    document.getElementById("img").style.display="block"
+                    a = false
+                }else{
+                    document.getElementById("img").style.display="none"
+                    a = true
+                }
+            }
+            /*Bucle para cambiar la imagen*/ 
+            document.getElementById("boton2").onclick = function(){        
+                if(b){
+                    document.getElementById("img").src="img/panda.jpg"
+                    b =false
+                }else{
+                    document.getElementById("img").src="img/koalas.jpg"
+                    b = true
+                }
+            }
+        </script>
+    </body>
+</html>

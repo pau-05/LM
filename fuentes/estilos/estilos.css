@@ -1,0 +1,15 @@
+/*Creo la fuente*/
+@font-face {
+    font-family: halloween;/*Nombro la fuente*/
+    src: url("../cf_halloween/CFHalloween-Regular.ttf");
+}
+h1{
+    font-family: 'halloween';
+}
+.p{
+    font-family: 'halloween';
+}
+/*p, h1, h2, h3, .menu{
+color: red == esto hace que todo lo anterior cambie a rojo, 
+es una forma de combinar
+}*/

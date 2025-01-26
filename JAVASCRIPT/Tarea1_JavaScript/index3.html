@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Punto 3</title>
+        <link rel="stylesheet" href="estilos/estilos.css">
+    </head>
+
+    <body>
+        <h1>Piedra, papel o tijera</h1>
+        <p>Recarga para jugar</p>
+        <script>
+            var opciones = ["piedra", "papel", "tijeras"]
+            var indiceAleatorio = Math.floor(Math.random() * opciones.length)
+            var resultado = opciones[indiceAleatorio]
+            var datos = prompt("Elije: piedra, papel o tijeras: ")
+            alert("La máquina ha elegido" + resultado)
+            if(datos=="piedra" && resultado=="papel" || datos=="papel" && resultado=="piedra"){
+                alert("El ganador es papel")
+            }else if(datos=="piedra" && resultado=="tijeras" || datos=="tijeras" && resultado=="piedra"){
+                alert("El ganador es piedra")
+            }else if(datos=="tijeras" && resultado=="papel" || datos=="papel" && resultado=="tijeras"){
+                alert("El ganador es tijeras")
+            }else{
+                alert("Es un empate!, inténtalo de nuevo")
+            }
+            //poner botón de recarga para que esté bonito
+        </script>
+    </body>
+</html>

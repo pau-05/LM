@@ -1,0 +1,24 @@
+body{
+    margin: 10%;
+    background-color: bisque;
+/*Lo primero acomodo el body y le pongo color*/
+}
+.menu ul{
+    list-style: none;
+    /*Todos los elementos del menú en vertical*/
+    display: flexbox;
+    /*Lo distribuyo y lo centro*/
+    justify-content: center;
+    padding: 5px 0px;
+    margin: 10%;
+    /*Le añado un color de fondo para que distinga de toda la página*/
+    background-color: antiquewhite;
+}
+a{/*Quito el subrayado de lo enlaces y cambio el color 
+    de letra*/
+    text-decoration: none;
+    color: black;
+}
+a:hover{/*Cuando ponga el cursor que le salga el subrayado*/
+    text-decoration: underline;
+}

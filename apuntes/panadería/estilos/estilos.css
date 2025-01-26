@@ -1,0 +1,52 @@
+@font-face {
+    font-family: medellin;
+    src: url("../fuente/medellin.ttf");
+}
+body{
+    background-color: #FDB2FC;
+}
+h1{
+    color:#F70EFC;
+    margin-top: 0;
+    font-size: 100px;
+    font-family: medellin;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.container img{
+    width: 25vw;
+    height: 30vh;
+}
+p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: purple;
+    font-size: 30px;
+}
+nav ul li a{
+    padding:20px;
+    border: 4px solid transparent;
+    border-radius: 10px;
+}
+nav{
+    background-color: antiquewhite;
+    position:sticky;
+    top:0px;
+}
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+}
+nav ul li a{
+   display:block;
+}
+nav ul li a:hover{
+    border-color: purple;
+    background-color: rgb(196, 191, 184);
+}

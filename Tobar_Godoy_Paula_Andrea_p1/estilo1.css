@@ -1,0 +1,27 @@
+body{
+    margin: 0%;
+}
+.menu ul{
+    /*Quito los puntos de la lista*/
+    list-style: none;
+    /*Todos los elementos del menú en línea*/
+    display: flex;
+    /*Distribuidos*/
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0%;
+}
+.menu{
+    background-color: bisque;
+}
+/*Solo aplica a la etiqueta a, dentro de li, dentro de ul,
+dentro de manú*/
+.menu ul li a{
+    /*Quito el subrayado de lo senlaces y cambio el color 
+    de letra*/
+    text-decoration: none;
+    color: black;
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+body{
+    margin: 3%;
+    background-color: rgb(255, 192, 192) ;
+/*Lo primero acomodo el body y le pongo color*/
+}
+.menu ul{
+    list-style: none;
+    /*Todos los elementos del menú en vertical*/
+    display: flow-root;
+}
+a{ /*Quito el subrayado de lo senlaces y cambio el color 
+    de letra*/
+    text-decoration: none;
+    color: black;
+}
+a:hover{/*Cuando ponga el cursor que le salga el subrayado*/
+    text-decoration: underline;
+}
+p{/*Distrubyo espacios y le pongo el margen y color al margen del texto*/
+    margin: 0px 50px 0px 80px;
+    border-style: solid;
+    border-color: red;
+    background-color: rgb(251, 97, 97);
+    text-indent: 30px;
+    line-height: 1.2;
+}img{/*Acomodo la imagen y le pongo el margen en double y su color*/
+    height: 300px;
+    width: 600px;
+    border-style: double;
+    border-color: rgb(220, 58, 58);
+}
+.contenido{/*Con este class distribuyo los elementos para que queden 
+    todos uno al lado del otro y los espacio*/
+    display: flex;
+    align-items: start;
+    padding: 50px;
+}

@@ -1,0 +1,31 @@
+body{
+    background-color: pink;
+}
+.queso{
+    width: 100px;
+    animation: bajar 1s infinite;
+    border: 2px solid transparent;
+}
+img{
+    width: 200px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    align-items: center;
+}
+@keyframes bajar{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(240px);
+        border:2px solid yellow;
+        background-color: green;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
